@@ -1,0 +1,25 @@
+// Find the first occurence of pattern in string
+// Return the position where it found
+// string will only contain alphanumeric characters
+// pattern contains
+// alphanumeric - exact match
+// dot(.) - Matches any character
+// Asterisk(*) - Previous character repeated 0 or more times
+// (?) - Previous character repeated 0 or 1 time
+// plus(+) - previous character is repeated 1 or more time
+
+
+int regex_find(pattern, string)
+
+
+Examples:
+
+string: aaabbbcccdddeee
+
+pattern: bbb - Matches. position 3
+pattern: c.c - Matches. position 6
+pattern: eeee - Unmatched
+pattern: cd*e - Matches. position 8
+pattern: c.*e - Matches. position 6
+pattern: ccdddd? - Matches. postition 7
+pattern: ccddde+ - Matched position 7
