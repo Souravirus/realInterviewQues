@@ -1,0 +1,12 @@
+Write a program which separately prints the number of Notes and Coins from the given mixture of notes and coins. So, basically there would be T inputs and each input would contain a string which would depict its type(whether its a coin or a note) and an integer which is the value of the coin or note.
+So, you have to print first the string "Note" and the values of all the notes below it in newline and after that the string "Coin" and all the values below it in a newline.
+
+But you have to write the code in this format:
+You have to make 3 classes:
+1.Notes
+2.Coins
+3.Bag
+
+Notes would have 1 attribute val and 1 method add(int val) which would add the value to the current object.
+Coins would have 1 attribute val and 1 method add(int val) which would add the value to the current object.
+Bag would be a generic class which would have two method add(type t) and display().
