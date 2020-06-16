@@ -1,0 +1,31 @@
+Given a map of n citiesin which some cities are connected by m undirected roads in total. 
+A map trip between city u and city v is valid only if u and v are connected by means of some roads. You have been given q queries. Each query contains  integers (u, v).
+For each query, you need to check if there is a valid path between u and v. Return the total number of queries where there is a valid path between u and v. 
+
+Constraints: 
+1 <= n <= 10^5
+1 <= m <= min(n*(n-1)/2, 10^5)
+1 <= q <= 10^5
+1 <= u, v <= n
+u != v
+
+Input:
+Arg1: Integer n denoting the number of cities.
+Arg2: 2D matrix B. Every row in B has exactly 2 integer elements u and v, denoting a road between u and v,
+Arg3: 2d matrix C. Every row in C has exactly 2 integer elements u and v, denoting a query (u, v)
+
+Example:
+n = 4
+
+Matrix R:
+1 3
+4 3
+
+Queries Q:
+3 2
+1 4
+2 4
+
+Return: 1
+
+Explanation: Only query 2 has a valid path between 1 and 4. For rest of the queries, there is no valid path between given cities.

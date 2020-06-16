@@ -1,0 +1,28 @@
+Given two array of integers A and B describing a pair of (A[i], B[i]) coordinates in 2-D plane. A[i] describe x coordinates of the i^th point in 2D plane whereas B[i] describe the y-coordinate of the i^th point in 2D plane.
+Find and return the maximum number of points which lie on the same line.
+
+Input Format
+The arguments given are integer arrays A and B.
+
+Output Format
+Returnthe maximum number of points which lie on the same line.
+
+Constraints:
+1 <= (length of the array A = length of array B) <= 1000
+-10^5 <= A[i], B[i] <= 10^5
+
+For example
+Input1:
+A = [-1, 0, 1, 2, 3, 3]
+B = [1, 0, 1, 2, 3, 4]
+
+Output1:
+4
+The maximum number of point which lie on same line are 4, those points are (0, 0), (1, 1), (2, 2), (3, 3)
+
+Input2:
+A = [3, 1, 4, 5, 7, -9, -8, 6]
+B = [4, -8, -3, -2, -1, 5, -7, -4]
+
+Output2:
+2
